@@ -126,6 +126,10 @@ body {
     display: inline-flex;
 }
 
+.button:hover {
+    background-color: hsl(158, 61%, 22%);
+}
+
 .attribution {
      margin-top: 12%;
      font-size: 11px; 
@@ -135,3 +139,29 @@ body {
     color: hsl(228, 45%, 44%);
  }
 
+@media only screen and (max-width: 375px) {
+
+    .container {
+        margin: 1rem;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column-left {
+        width: 40rem;
+        height: 100%;
+    }
+
+    .column-right {
+        width: 40rem;
+        height: 50%;
+    }
+
+    .column-left > img {
+        height: 400px;
+        width: 100%;
+    }
+}
